@@ -4,7 +4,7 @@
 
 > ✨ Powered by web technologies. Styled with passion. Crafted for creativity.
 
-![image alt] (https://github.com/Zaidkhan-dev/Z-OS/blob/cb34ff0c87e47df1080f3b49203229094b7ce919/Screenshot_20250626-180802.Chrome~2.png)
+![image alt] (https://raw.githubusercontent.com/Zaidkhan-dev/Z-OS/cb34ff0c87e47df1080f3b49203229094b7ce919/Screenshot_20250626-180802.Chrome%7E2.png)
 
 ## 🚀 Features
 
