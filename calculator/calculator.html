@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>ZCalculator</title>
+  <link href="calculator.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+  
+   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/036bdaeb39.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+  <div class="parent">
+    <div class="close">
+    <button class="closeapps" onclick="
+         document.location='../home.html';">
+       <i class="material-symbols-outlined">close</i>
+       
+    </button>
+    </div>
+    <div class="container">
+
+      <div class="rslt">
+        <p class="txt"></p></div>
+      <div class="clear">
+        <button class="but" onclick ="
+          sumin = ``;
+          document.querySelector(`.txt`).innerHTML = sumin.replaceAll('/', ' ÷ ').replaceAll('*', ' × ');
+          ">C</button></div>
+      <div class="num">
+        <button class="but" onclick ="
+          sumin += ` / `;
+          document.querySelector(`.txt`).innerHTML = sumin.replaceAll('/', ' ÷ ').replaceAll('*', ' × ');">÷</button>
+      </div>
+      <div class="num">
+        <button class="but" onclick ="
+          sumin += ` * `;
+          document.querySelector(`.txt`).innerHTML = sumin.replaceAll('/', ' ÷ ').replaceAll('*', ' × ');">×</button>
+      </div>
+      <div class="num">
+        <button class="but" onclick ="
+          sumin += `1`;
+          document.querySelector(`.txt`).innerHTML = sumin.replaceAll('/', ' ÷ ').replaceAll('*', ' × ');">1</button>
+      </div>
+      <div class="num">
+        <button class="but" onclick ="
+          sumin += `2`;
+          document.querySelector(`.txt`).innerHTML = sumin.replaceAll('/', ' ÷ ').replaceAll('*', ' × ');">2</button>
+      </div>
+      <div class="num">
+        <button class="but" onclick ="
+          sumin += `3`;
+          document.querySelector(`.txt`).innerHTML = sumin.replaceAll('/', ' ÷ ').replaceAll('*', ' × ');">3</button>
+      </div>
+      <div class="num">
+        <button class="but" onclick ="
+          sumin += ` - `;
+          document.querySelector(`.txt`).innerHTML = sumin.replaceAll('/', ' ÷ ').replaceAll('*', ' × ');">-</button>
+      </div>
+      <div class="num">
+        <button class="but" onclick ="
+          sumin += `4`;
+          document.querySelector(`.txt`).innerHTML = sumin.replaceAll('/', ' ÷ ').replaceAll('*', ' × ');">4</button>
+      </div>
+      <div class="num">
+        <button class="but" onclick ="
+          sumin += `5`;
+          document.querySelector(`.txt`).innerHTML = sumin.replaceAll('/', ' ÷ ').replaceAll('*', ' × ');">5</button>
+      </div>
+      <div class="num">
+        <button class="but" onclick ="
+          sumin += `6`;
+          document.querySelector(`.txt`).innerHTML = sumin.replaceAll('/', ' ÷ ').replaceAll('*', ' × ');">6</button>
+      </div>
+      <div class="add">
+        <button class="but" onclick ="
+          sumin += ` + `;
+          document.querySelector(`.txt`).innerHTML = sumin.replaceAll('/', ' ÷ ').replaceAll('*', ' × ');">+</button>
+      </div>
+      <div class="num">
+        <button class="but" onclick ="
+          sumin += `7`;
+          document.querySelector(`.txt`).innerHTML = sumin.replaceAll('/', ' ÷ ').replaceAll('*', ' × ');">7</button>
+      </div>
+      <div class="num">
+        <button class="but" onclick ="
+          sumin += `8`;
+          document.querySelector(`.txt`).innerHTML = sumin.replaceAll('/', ' ÷ ').replaceAll('*', ' × ');">8</button>
+      </div>
+      <div class="num">
+        <button class="but" onclick ="
+          sumin += `9`;
+          document.querySelector(`.txt`).innerHTML = sumin.replaceAll('/', ' ÷ ').replaceAll('*', ' × ');">9</button>
+      </div>
+      <div class="num">
+        <button class="but" onclick ="
+          sumin += `0`;
+          document.querySelector(`.txt`).innerHTML = sumin.replaceAll('/', ' ÷ ').replaceAll('*', ' × ');">0</button>
+      </div>
+      <div class="num">
+        <button class="but" onclick ="
+          sumin += `00`;
+          document.querySelector(`.txt`).innerHTML = sumin.replaceAll('/', ' ÷ ').replaceAll('*', ' × ');">00</button>
+      </div>
+      <div class="num">
+        <button class="but" onclick ="
+          sumin += `.`;
+          document.querySelector(`.txt`).innerHTML = sumin.replaceAll('/', ' ÷ ').replaceAll('*', ' × ');">.</button>
+      </div>
+      <div class="num">
+        <button class="but" onclick ="
+          let sum = eval(sumin);
+          sumin = sum;
+          document.querySelector(`.txt`).innerHTML =` = ` + sum;
+          
+          ">=</button>
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+
+
+
+
+
+
+  <script src="calculator.js"></script>
+  <script src="https://berkaytumal.github.io/FxFilterJS/FxFilter.js"></script>
+</body>
+
+</html>
