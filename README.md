@@ -1,3 +1,4 @@
+https://zaidkhan-dev.github.io/Z-OS/
 # 🌌 Z-OS
 
 **Z-OS** is a sleek, interactive **web-based operating system interface** developed by me — inspired by Apple's latest **liquid glass design** aesthetics. It’s not a full OS, but rather a visually rich and fun project that reimagines the desktop experience in the browser.
