@@ -1,0 +1,194 @@
+body {
+  background-image: url("../img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding:0;
+  margin:0;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Smooch Sans', sans-serif;
+  text-shadow: 2px 2px black;
+  
+  
+}
+
+.parent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  
+  align-items: center;
+  justify-content: center;
+  
+  
+  
+  
+  
+  
+  
+}
+.box {
+  position: relative;
+  
+  height: 73%;
+  width: 73%;
+  border-radius: 20px;
+  
+  --fx-filter: blur(3px) contrast(1.2) liquid-glass(10, 20, 0.8) saturate(1.3);
+    background: linear-gradient(135deg,
+        rgba(255, 255, 255, 0.25) 0%,
+        rgba(255, 255, 255, 0.1) 50%,
+        rgba(255, 255, 255, 0.05) 100%);
+    box-shadow: 
+        inset 0 2px 0 rgba(255, 255, 255, 0.3),
+        inset 0 -2px 0 rgba(0, 0, 0, 0.3);
+  
+    padding: 7%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+    
+    
+    
+  
+  
+  
+}
+
+.save {
+    height: 40px;
+    position: relative;
+
+    
+
+    --fx-filter: blur(2px) contrast(1.2) liquid-glass(2, 10) saturate(1.2);
+    background: linear-gradient(135deg,
+        rgba(255, 255, 255, 0.25) 0%,
+        rgba(255, 255, 255, 0.1) 50%,
+        rgba(255, 255, 255, 0.05) 100%);
+    box-shadow: 
+        inset 0 2px 0 rgba(255, 255, 255, 0.3),
+        inset 0 -2px 0 rgba(0, 0, 0, 0.3);
+  
+    padding: 25px;
+    border-radius: 20px;
+    font-size: 20px;
+    border: none;
+    text-align: center;
+    text-justify: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    color: grey;
+    
+    
+    transition: 0.1s;
+    
+    
+    
+    
+    
+}
+.save:active {
+    transform: scale(0.9);
+    transition: 0.1s;
+    
+    
+    
+}
+
+.titleInput {
+    width: 100%;
+    
+    
+    
+
+    
+    height: 50px;
+    font-size: 40px;
+    
+    
+}
+
+.text {
+    display: inline-block;
+    background-color: rgba(0,0,0,0);
+    border:none;
+    
+    
+}
+input {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white; /* or any text color you want */
+  caret-color: white; /* sets the blinking line color */
+}
+.closeapps, .delapps {
+  background-color: transparent;
+  border: none;
+  color: white;
+  
+  
+}
+.noteInput {
+    margin-top: 20px;
+    display: block; /* or flex if needed */
+    width: 100%;
+    white-space: pre-wrap; /* allows wrapping and preserves newlines */
+    word-wrap: break-word; /* ensures long words wrap too */
+}.noteInput {
+  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+  resize: none; /* disables manual resizing */
+  background: transparent;
+  color: white;
+  border: none;
+  outline: none;
+  font-family: 'Smooch Sans', sans-serif;
+  font-size: 18px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  caret-color: white;
+  text-shadow: 2px 2px black;
+    
+}
+.noteInput::placeholder {
+  text-shadow: none;
+  
+}
+.text {
+    height: 77%;
+    }
+.close , .del{
+  position:  absolute;
+  top : 10px;
+  left : 10px;
+  font-size: 40px;
+  color: white;
+  
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0 4px 2px rgba(255, 255, 255, 0.2);
+  
+  
+}
+.del{
+    right: 10px;
+    left: unset;
+    
+    
+}

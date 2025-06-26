@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intro Page</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Orbitron:wght@400..900&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="editnotes.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100" rel="stylesheet" />
+</head>
+<body>
+
+  <div class= "parent">
+    <div class="close">
+    <button class="closeapps" onclick="document.location.href='notes.html';">
+       <i class="material-symbols-outlined">close</i>
+       
+    </button>
+    </div>
+    <div class="del">
+    <button class="delapps" onclick="deleteNote();">
+       <i class="material-symbols-outlined">delete</i>
+       
+    </button>
+    </div>
+    <div class="box">
+      <div class="text">
+    <input type="text" placeholder="Title"  class="titleInput"/>
+        
+    <textarea class="noteInput" placeholder="Start writing here…" spellcheck="false"></textarea>
+        </div>
+     <button class="save" onclick="saveNote();">Save</button>
+  </div>  
+     
+  </div>
+  
+
+
+
+
+
+
+  
+
+  <script src="editnotes.js"></script>
+  <script src="https://berkaytumal.github.io/FxFilterJS/FxFilter.js"></script>
+</body>
+</html>

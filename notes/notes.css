@@ -1,0 +1,187 @@
+body {
+  background-image: url("../img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding:0;
+  margin:0;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Smooch Sans", sans-serif;
+  overflow : hidden;
+  background-attachment: fixed;
+  
+  }
+.parent{
+  width: 100%;
+  height: 100%;
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+}
+html {
+  margin:0;
+  padding:0;
+  height: 100vh;
+  width: 100vw;
+  
+}
+.header{
+  height: 50px;
+  width: 95%;
+  
+  position: fixed;
+  top: 0;
+  --fx-filter: blur(2px) contrast(1.2) liquid-glass(2, 10) saturate(1.2);
+    background: linear-gradient(135deg,
+        rgba(255, 255, 255, 0.25) 0%,
+        rgba(255, 255, 255, 0.1) 50%,
+        rgba(255, 255, 255, 0.05) 100%);
+    box-shadow: 
+        inset 0 2px 0 rgba(255, 255, 255, 0.3),
+        inset 0 -2px 0 rgba(0, 0, 0, 0.3);
+  
+    padding: 2%;
+  border: 0.1px solid white;
+}
+.close {
+  position:  absolute;
+  top : 17px;
+  left : 10px;
+  font-size: 40px;
+  color: white;
+  
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0 4px 2px rgba(255, 255, 255, 0.2);
+  
+  
+}
+.closeapps {
+  background-color: transparent;
+  border: none;
+  color: white;
+  }
+.header {
+  margin:2%;
+  /* 
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0 0px 0px rgba(255, 255, 255, 0);
+  position: absolute;
+  top: 0;
+  */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Smooch Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 270;
+  font-style: normal;
+  font-size: 50px;
+  border-radius: 20px;
+  z-index: 3;
+  
+  color: #ebebeb;
+  
+  
+}
+.notesList{
+  height: 80%;
+  width: 100%;
+  
+}
+
+.addNote, .Notes {
+  margin-top: 15px;
+  
+  position: relative;
+  border-radius: 20px;
+  z-index: 2;
+  
+  
+  width: 85%;
+  height: 40px;
+  color: white;
+  --fx-filter: blur(2px) contrast(1.2) liquid-glass(2, 10) saturate(1.2);
+    background: linear-gradient(135deg,
+        rgba(255, 255, 255, 0.25) 0%,
+        rgba(255, 255, 255, 0.1) 50%,
+        rgba(255, 255, 255, 0.05) 100%);
+    box-shadow: 
+        inset 0 2px 0 rgba(255, 255, 255, 0.3),
+        inset 0 -2px 0 rgba(0, 0, 0, 0.3);
+  
+    padding: 2%; 
+  display: flex;
+  flex-direction: row;
+  
+  align-items: center;
+  justify-content: left;
+  font-size: 20px;
+  
+  
+ span {
+  margin-left: 10px;
+  
+  
+}
+p {
+  text-shadow: 2px 2px black;
+  
+  margin-left: 20px;
+  
+  
+}
+
+  }
+.addNotes{
+  margin-top: 0;
+
+  
+}
+.Notes {
+  width: 85%;
+  
+}
+.parent {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.notesList {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding-bottom: 20px;
+  overflow-x: visible;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  
+  
+  
+}
+.notesList {
+  scroll-behavior: smooth;
+}
