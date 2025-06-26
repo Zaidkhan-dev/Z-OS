@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Z-OS</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Orbitron:wght@400..900&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="game.css">
+  <script src="https://berkaytumal.github.io/FxFilterJS/FxFilter.js"></script>
+</head>
+<body>
+<div class="close">
+    <button class="closeapps" onclick="
+         document.location='../home.html';">
+       <i class="material-symbols-outlined">close</i>
+       
+    </button>
+</div>
+<div class="parent">
+  <div class="winner"></div>
+
+  <div class="top">
+     <div class="leftwrapper">
+    <img src="rock.png" />
+    </div> 
+    <div class="rightwrapper">
+    <img src="rock.png" />
+    </div> 
+  </div>
+  <div class="bottom">
+     <button class="control"  onclick="rock();"><img src="rock.png"/></button>
+     <button class="control"  onclick="paper();"><img src="paper.png" /></button>
+     <button class="control"  onclick="scissors();"><img src="scissor.png" /></button>
+  </div>
+  
+  
+   
+</div>
+
+  
+ 
+  
+  
+
+
+
+  
+
+  <script src="game.js"></script>
+  <script src="https://berkaytumal.github.io/FxFilterJS/FxFilter.js"></script>
+</body>
+</html>

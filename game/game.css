@@ -1,0 +1,267 @@
+/* Recommended global setting */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Then your existing CSS */
+html {
+  margin:0;
+  padding:0;
+  height: 100%;
+  width: 100%;
+  
+  overflow: hidden;
+  
+}
+
+.closeapps {
+  background-color: transparent;
+  border: none;
+  color: white;
+  
+  
+}
+.close {
+  position:  absolute;
+  top : 10px;
+  left : 10px;
+  font-size: 40px;
+  color: white;
+  
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0 4px 2px rgba(255, 255, 255, 0.2);
+  
+  
+}
+.scorecard {
+  color: white;
+  
+  position: absolute;
+  bottom: -100vh; /* initially off-screen */
+  left: 50%;
+  transform: translateX(-50%);
+  --fx-filter: blur(2px) contrast(1.2) liquid-glass(2, 10) saturate(1.2);
+    background: linear-gradient(135deg,
+        rgba(255, 255, 255, 0.25) 0%,
+        rgba(255, 255, 255, 0.1) 50%,
+        rgba(255, 255, 255, 0.05) 100%);
+    box-shadow: 
+        inset 0 2px 0 rgba(255, 255, 255, 0.3),
+        inset 0 -2px 0 rgba(0, 0, 0, 0.3);
+  
+  
+  padding: 12px 30px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 20px;
+  transition: bottom 0.5s ease;
+  z-index: 999;
+  font-family: 'Orbitron', sans-serif;
+}
+body {
+  background-image: url("../img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+
+  padding:0;
+  margin:0;
+  width: 100%;
+  height: 100%;
+  
+  overflow: hidden;
+  
+  
+}
+
+.control{
+  background: transparent;
+  position: relative;
+  height: 100px;
+  width: 100px;
+  
+  border:none;
+  --fx-filter: blur(2px) contrast(1.2) liquid-glass(2, 10) saturate(1.2);
+    background: linear-gradient(135deg,
+        rgba(255, 255, 255, 0.25) 0%,
+        rgba(255, 255, 255, 0.1) 50%,
+        rgba(255, 255, 255, 0.05) 100%);
+    box-shadow: 
+        inset 0 2px 0 rgba(255, 255, 255, 0.3),
+        inset 0 -2px 0 rgba(0, 0, 0, 0.3);
+  
+    
+  border-radius: 50%;
+  img {
+    width: 40px;
+    transition:0.1s;
+    
+  }
+ 
+}
+.control:nth-child(1)  img {
+    width: 35px;
+    
+}
+
+.control:active{
+  transform: scale(0.9);
+  
+  --fx-filter: blur(2px) contrast(1.2) liquid-glass(2, 10) saturate(1.2);
+    background: linear-gradient(135deg,
+        rgba(255, 255, 255, 0.25) 0%,
+        rgba(255, 255, 255, 0.1) 50%,
+        rgba(255, 255, 255, 0.05) 100%);
+    box-shadow: 
+        inset 0 2px 0 rgba(255, 255, 255, 0.3),
+        inset 0 -2px 0 rgba(0, 0, 0, 0.3);
+  transition: 0.1s;
+  
+}
+.parent{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding:30px; /* This padding will now be included within the 100% width/height */
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  
+}
+  
+  
+.top{
+  position: relative;
+  overflow: hidden;
+  
+  
+  width: 100%; /* This width will now include its padding */
+  flex: 2;
+  --fx-filter: blur(2px) contrast(1.2) liquid-glass(30, 10) saturate(1.2);
+    background: linear-gradient(135deg,
+        rgba(255, 255, 255, 0.25) 0%,
+        rgba(255, 255, 255, 0.1) 50%,
+        rgba(255, 255, 255, 0.05) 100%);
+    box-shadow: 
+        inset 0 2px 0 rgba(255, 255, 255, 0.3),
+        inset 0 -2px 0 rgba(0, 0, 0, 0.3);
+  
+    
+  border-radius: 20px;
+  
+}
+.bottom{
+  position: relative;
+    border-radius: 20px;
+  width: 100%; /* This width will now include its padding */
+  margin-top: 20px;
+  
+  --fx-filter: blur(2px) contrast(1.2) liquid-glass(20, 10) saturate(1.2);
+    background: linear-gradient(135deg,
+        rgba(255, 255, 255, 0.25) 0%,
+        rgba(255, 255, 255, 0.1) 50%,
+        rgba(255, 255, 255, 0.05) 100%);
+    box-shadow: 
+        inset 0 2px 0 rgba(255, 255, 255, 0.3),
+        inset 0 -2px 0 rgba(0, 0, 0, 0.3);
+  
+    padding: 20px;
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  
+  
+  
+  
+}
+  
+  
+  
+
+
+.leftwrapper, .rightwrapper {
+  
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  
+}
+.leftwrapper {
+  position: absolute;
+  left: 0;
+  
+}
+.rightwrapper {
+  position: absolute;
+  right: 0;
+  
+}
+
+.leftwrapper img {
+  transform: rotate(75deg);
+  width: 120px;
+}
+.rightwrapper img {
+  width: 120px;
+  
+    transform: rotate(-75deg);
+}
+@keyframes down {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(60px); }
+  100% { transform: translateY(0px); }
+}
+
+
+.top{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+  
+  
+  
+}
+.winner {
+  position: absolute;
+  top: -100vh; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  color: white;
+  text-align: center;
+  
+  padding: 20px 40px;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 20px;
+  transition: top 0.5s ease;
+  z-index: 999;
+  font-family: 'Orbitron', sans-serif;
+
+  --fx-filter: blur(2px) contrast(1.2) liquid-glass(2, 10) saturate(1.2);
+    background: linear-gradient(135deg,
+        rgba(255, 255, 255, 0.25) 0%,
+        rgba(255, 255, 255, 0.1) 50%,
+        rgba(255, 255, 255, 0.05) 100%);
+    box-shadow: 
+        inset 0 2px 0 rgba(255, 255, 255, 0.3),
+        inset 0 -2px 0 rgba(0, 0, 0, 0.3);
+  
+    
+}
